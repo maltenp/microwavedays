@@ -27,25 +27,33 @@
 \section{INTRODUCTION}
  Complex permittivity is a measure of a dielectrics response to an electric field. Today it is widely used to discern internal changes in a material and/or dicern two materials from each other. One particular field which have been recently studied is to monitor the permittivity change of blood at different glucose levels \cite{c2}. Additionally,  the authors see for example applications in the industry to monitor, the wear of lube oils or alcohol levels in breweries/wineries continuously.
  
- In this paper a method based on cavity small perturbation theory \cite{c3} is proposed to measure the complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field (along $z$ in Fig. \ref{fig:sim}). The frequency response around the cavity's resonance frequency is measured by a Virtual Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
+ In this paper a method based on cavity small perturbation theory \cite{c3} is proposed to measure the complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field. The frequency response around the cavity's resonance frequency is measured by a Virtual Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
  
- In this time limited project, a crude setup was developed and yet turned out powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl (The typical glucose range of human blood). The method is very generic and can be used in a variety of situations to monitor small permittivity changes continuously.
- 
- \begin{figure}[b]
- 	\centering
- 	\includegraphics[width=1.0\columnwidth]{EHfield.png}
- 	\caption{A simulation of the cavity done in HFFS}
- 	\label{fig:sim}
- \end{figure}
+ The setup is powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl (The typical glucose range of human blood). The method is very generic and can be used in a variety of situations to monitor small permittivity changes continuously.
+
+% \begin{figure}[b]
+% 	\centering
+% 	\includegraphics[width=1.0\columnwidth]{EHfield.png}
+% 	\caption{A simulation of the cavity done in HFFS}
+% 	\label{fig:sim}
+% \end{figure}
 
 \section{EVALUTING THE SETUP/RESULTS}
-To evaluate the setup, measurements of different water-glucose solutions, 168$\mu$l of concentrated glucose solution (1g/10ml) was mixed with 5($\pm0.5$) dl DI-water, increasing the concentration by 10mg/dl. The results are shown in Fig. \ref{fig:eim} where the original measurements are shown as circles and a calculated temperature shift corresponding to a temperature difference between 0 to $\pm$0.007$^o$C are shown as stars.
+ \begin{figure}[b]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{pumpgluzoomERE.png}
+	\caption{Evaluation of the setup. Shifts in $\epsilon''$ due to small temperature variations. The circles are the original data (not compensated for temperature) and the stars are the corresponding, shifted points.}
+	\label{fig:ere}
+\end{figure}
+To evaluate the setup, measurements of different water-glucose solutions, 168$\mu$l of concentrated glucose solution (1g/10ml) was mixed with 5($\pm0.5$) dl DI-water, increasing the concentration by 10mg/dl. The results are shown in Fig. \ref{fig:eim}-\ref{fig:eig} where the original measurements are shown as circles and a calculated temperature shift corresponding to a temperature difference between 0 to $\pm$0.007$^o$C are shown as stars.
+
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{pumpgluzoomEIM.png}
 	\caption{Evaluation of the setup. Shifts in $\epsilon'$ due to small temperature variations. The circles are the original data (not compensated for temperature) and the stars are the corresponding, shifted points.}
 	\label{fig:eim}
 \end{figure}
+
 
 %\section{CITING PREVIOUS WORK}
 %When referencing a journal article~\cite{hansen84}, a conference digest
@@ -89,7 +97,7 @@ In the evaluation we show that the method is accurate enough to result in a tren
 	
 	
 	
-	\bibitem{c2} Hofmann, Maximilian and Fischer, Georg and Weigel, Robert and Kissinger, Dietmar, "Microwave-Based Noninvasive Concentration Measurements for Biomedical Applications", in 2013, IEEE Transactions on Microwave Theory and Techniques, Volume 61, number 5, pages 2195-2204
+	\bibitem{c2} Hofmann, Maximilian and Fischer, Georg and Weigel, Robert and Kissinger, Dietmar, "Microwave-Based Noninvasive Concentration Measurements for Biomedical Applications", in 2013, IEEE Transactions on M. Theory and Techniques, Volume 61, number 5, pages 2195-2204
 	
 	\bibitem{c3} D. M. Pozar, Microwave Engineering, Chapter 6: Microwave Resonators. John Wiley \& Sons,
 	Inc, 2012.

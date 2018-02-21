@@ -27,30 +27,29 @@
 \section{INTRODUCTION}
  Complex permittivity is a measure of a dielectric's response to an electric field. Today it is widely used to discern internal changes in a material and/or discern two materials from each other. One particular field which has been recently studied is to monitor the permittivity change of blood at different glucose levels \cite{c2}. Additionally, the authors see industrial applications in monitoring the wear of lube oils or alcohol levels continuously in breweries or wineries.
  
- In this paper a method based on small cavity perturbation theory \cite{c3} is proposed to measure complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field. The frequency response around the cavity's resonance frequency is measured by a Virtual Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
+ In this paper a method based on small cavity perturbation theory \cite{c3} is proposed to measure complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field (along the z-axis in Fig \ref{fig:sim}). The frequency response around the cavity's resonance frequency is measured by a Virtual Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
  
  The setup is powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl, the typical glucose range of human blood. The method is generic and can be used in a variety of situations to monitor small permittivity changes continuously.
 
-% \begin{figure}[b]
-% 	\centering
-% 	\includegraphics[width=1.0\columnwidth]{EHfield.png}
-% 	\caption{A simulation of the cavity done in HFFS}
-% 	\label{fig:sim}
-% \end{figure}
-
+\begin{figure}[b]
+ 	\centering
+ 	\includegraphics[width=1.0\columnwidth]{EHfield.png}
+ 	\caption{A simulation of the cavity done in HFFS}
+ 	\label{fig:sim}
+ \end{figure}
 \section{EVALUTING THE SETUP/RESULTS}
- \begin{figure}[b]
-	\centering
-	\includegraphics[width=1.0\columnwidth]{pumpgluzoomERE.png}
-	\caption{Re. part of c. permittivity, $\epsilon'$ vs concentration. Shifts in $\epsilon''$ due to small temperature variations. The circles are the original data (No temperature compensation) and the stars are the temperature shifted points}
-	\label{fig:ere}
-\end{figure}
+% \begin{figure}[b]
+%	\centering
+%	\includegraphics[width=1.0\columnwidth]{pumpgluzoomERE.png}
+%	\caption{Re. part of c. permittivity, $\epsilon'$ vs concentration. Shifts in $\epsilon''$ due to small temperature variations. The circles are the original data (No temperature compensation) and the stars are the temperature shifted points}
+%	\label{fig:ere}
+%\end{figure}
 To evaluate the setup, measurements were made of water-glucose solutions with different glucose concentrations. 168(05) $\mu$l of glucose solution with a concentration of 1g/10ml was mixed with 5.00(50) dl DI-water. Between each measurement the concentration was increased by 10 mg/dl. The results are shown in Fig. \ref{fig:ere}-\ref{fig:eim} where the original measurements are shown as circles and a calculated temperature shift corresponding to a temperature difference between 0 to $\pm$0.007$^o$C are shown as stars.
 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{pumpgluzoomEIM.png}
-	\caption{Im. part of c. permittivity, $\epsilon''$  see Fig. \ref{fig:ere} for more details}
+	\caption{Re. part of c. permittivity, $\epsilon'$ vs concentration. Shifts in $\epsilon''$ due to small temperature variations. The circles are the original data (No temperature compensation) and the stars are the temperature shifted points}
 	\label{fig:eim}
 \end{figure}
 

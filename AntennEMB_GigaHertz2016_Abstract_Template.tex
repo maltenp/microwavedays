@@ -1,0 +1,108 @@
+
+
+\documentclass[10pt,final,conference,a4paper,twocolumn]{IEEEtran_AntennEMB_GigaHertz2016}
+\usepackage{graphicx}
+
+
+
+\usepackage[swedish,english]{babel}
+\usepackage[bottom]{footmisc}
+
+
+
+% The document begins here
+\begin{document}
+
+% paper title
+\title{Continuous complex permittivity extraction from water-glucose solutions using a resonant microwave cavity around 300 MHz}
+
+% author names and affiliations
+\author{Matthias Carlsson$^1$, Gustav Eriksson$^1$, Jens Ljungberg$^1$ and Dragos Dancila$^2$ \\
+\em \small \textbf{1:} Student in Master of Eng. Physics, \textbf{2:} Associate Senior Lecturer at Dep. of Eng. Sciences - SSE at Uppsala University \\
+\em \small matthias.carlsson.5845@student.uu.se, gustav.eriksson.0648@student.uu.se, \\
+\em \small jens.ljungberg.2853@student.uu.se \& dragos.dancila@angstrom.uu.se
+}
+
+\maketitle
+\section{INTRODUCTION}
+ Complex permittivity is a measure of a dielectrics response to an electric field. Today it is widely used to discern internal changes in a material and/or dicern two materials from each other. One particular field which have been recently studied is to monitor the permittivity change of blood at different glucose levels \cite{c2}. Additionally,  the authors see for example applications in the industry to monitor, the wear of lube oils or alcohol levels in breweries/wineries continuously.
+ 
+ In this paper a method based on cavity small perturbation theory \cite{c3} is proposed to measure the complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field (along $z$ in Fig. \ref{fig:sim}). The frequency response around the cavity's resonance frequency is measured by a Virtual Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
+ 
+ In this time limited project, a crude setup was developed and yet turned out powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl (The typical glucose range of human blood). The method is very generic and can be used in a variety of situations to monitor small permittivity changes continuously.
+ 
+ \begin{figure}[b]
+ 	\centering
+ 	\includegraphics[width=1.0\columnwidth]{EHfield.png}
+ 	\caption{A simulation of the cavity done in HFFS}
+ 	\label{fig:sim}
+ \end{figure}
+
+\section{EVALUTING THE SETUP/RESULTS}
+To evaluate the setup, measurements of different water-glucose solutions, 168$\mu$l of concentrated glucose solution (1g/10ml) was mixed with 5($\pm0.5$) dl DI-water, increasing the concentration by 10mg/dl. The results are shown in Fig. \ref{fig:eim} where the original measurements are shown as circles and a calculated temperature shift corresponding to a temperature difference between 0 to $\pm$0.007$^o$C are shown as stars.
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1.0\columnwidth]{pumpgluzoomEIM.png}
+	\caption{Evaluation of the setup. Shifts in $\epsilon'$ due to small temperature variations. The circles are the original data (not compensated for temperature) and the stars are the corresponding, shifted points.}
+	\label{fig:eim}
+\end{figure}
+
+%\section{CITING PREVIOUS WORK}
+%When referencing a journal article~\cite{hansen84}, a conference digest
+%article~\cite{richter01} or a book~\cite{stutzman98} use the usual \LaTeX\ biblio\-graphy environments.
+
+
+
+\section{CONCLUSIONS}
+In this paper we suggest and evaluate a method of measuring the permittivity in a narrow frequency range around a cavity's resonant frequency. The approach is very generic and can be applied to almost any cavity and corresponding resonant frequency. E.g. to measure a liquids permittivity change during operation by directing some of the flow trough the cavity.
+
+In the evaluation we show that the method is accurate enough to result in a trend in a relatively narrow glucose-water concentration range. For improvements, the uncertainty in the permittivity can be reduced by more, and more accurate reference values, more accurate calculations and better concentrations and temperature control and a more rigid setup. Despite the many possible improvements we believe that the method as it is, can very successfully be used to detect anomalies and deviations in complex permittivity from a reference value
+%\addtolength{\textheight}{-18cm}   % This command serves to balance the column lengths
+% on the last page of the document manually. It shortens
+% the textheight of the last page by a suitable amount.
+% This command does not take effect until the next page
+% so it should come on the page before the last. Make
+% sure that you do not shorten the textheight too much.
+
+
+
+
+%\section*{ACKNOWLEDGEMENT}
+%The authors wish to acknowledge the assistance and support of all those who
+%contribute to...
+
+% references section
+
+% NOTE: BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+
+% You can use a bibliography generated by BibTeX as a .bbl file:
+%\bibliographystyle{IEEEtran}
+%\bibliography{IEEEabrv,mybib}
+
+% <OR>
+
+% manually copy the resulting .bbl file into this document
+% and set the second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+\begin{thebibliography}{99}
+	
+	
+	
+	\bibitem{c2} Hofmann, Maximilian and Fischer, Georg and Weigel, Robert and Kissinger, Dietmar, "Microwave-Based Noninvasive Concentration Measurements for Biomedical Applications", in 2013, IEEE Transactions on Microwave Theory and Techniques, Volume 61, number 5, pages 2195-2204
+	
+	\bibitem{c3} D. M. Pozar, Microwave Engineering, Chapter 6: Microwave Resonators. John Wiley \& Sons,
+	Inc, 2012.
+	
+	\bibitem{c1} V. Turgul and I. Kale, "Characterization of the complex permittivity of glucose/water solutions for noninvasive RF/Microwave blood glucose sensing," in 2016, . DOI: 10.1109/I2MTC.2016.7520546.
+\end{thebibliography}
+
+% A crude (but effective) way to achieve equally high columns (which looks nicer) on the last page is to shorten the page length of the first % column of the
+% last page via \enlargethispage{-X.Xcm} where X.X is the value you find that makes the columns equal.
+% This hack will have to be adjusted if the document is altered meaning you will have to tweak the value of X.X iteratively and might
+% also change the actual positioning of this command within your text.
+% The only way to get around this problem is writing a routine inside the class file which actually calculates the print space on the last
+% page and adjusts iteratively (but automatically!) the text height on this page.
+
+%\enlargethispage{-18.5cm} %this shortens the last page so that both columns have the same height (use this after you completely finished your paper)
+\end{document}

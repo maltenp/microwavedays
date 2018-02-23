@@ -17,27 +17,27 @@
 \title{Continuous complex permittivity extraction from water-glucose solutions using a resonant microwave cavity at 300 MHz}
 
 % author names and affiliations
-\author{Matthias Carlsson$^1$, Gustav Eriksson$^1$, Jens Ljungberg$^1$ and Dragos Dancila$^2$ \\
-\em \small \textbf{1:} Student in Master of Eng. Physics, \textbf{2:} Associate Senior Lecturer at Dep. of Eng. Sciences - SSE at Uppsala University \\
+\author{Matthias Carlsson$^1$, Gustav Eriksson$^1$, Jens Ljungberg$^1$ and Dragos Dancila$^1$ \\
+\em \small \textbf{1:} Division of Solid-State Electronics, Uppsala University, SE-751 21 Uppsala, Sweden\\
 \small matthias.carlsson.5845@student.uu.se, gustav.eriksson.0648@student.uu.se, \\
 \small jens.ljungberg.2853@student.uu.se and dragos.dancila@angstrom.uu.se
 }
 
 \maketitle
 \section{INTRODUCTION}
- Complex permittivity is a measure of a dielectric's response to an electric field. Today it is widely used to discern internal changes in a material and/or discern two materials from each other. One particular field which has been recently studied is to monitor the permittivity change of blood at different glucose levels \cite{c2}. Additionally, the authors see industrial applications in monitoring the wear of lube oils or alcohol levels continuously in breweries or wineries.
+One particular field which has been recently studied is to monitor the permittivity change of blood at different glucose levels \cite{c2}. 
  
- In this paper a method based on small cavity perturbation theory \cite{c3} is proposed to measure complex permittivity non-evasively and continuously. In the proposed setup the liquid is circulating through a strong electric field (along the z-axis in Fig \ref{fig:sim}). The frequency response around the cavity's resonance frequency is measured by a Vector Network Analyzer (VNA). The method of determining the permittivty from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
+ In this paper a method based on the small cavity perturbation theory \cite{c3} is proposed to measure complex permittivity noninvasively and continuously. In the proposed setup the liquid is circulating through a strong electric field (along the z-axis in Fig \ref{fig:sim}). The frequency response around the cavity's resonance frequency is measured by a Vector Network Analyzer (VNA). The method of determining the permittivity from the frequency response can be found in previous papers \cite{c2}\cite{c1} but with different setups, higher frequencies and higher water-glucose concentrations compared to what are presented in these papers.
  
- The setup is powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl, the typical glucose range of human blood. The method is generic and can be used in a variety of situations to monitor small permittivity changes continuously.
+ The setup is powerful enough to discern a trend in glucose concentrations ranging from 50-200mg/dl, the typical glucose range of human blood. The method is generic and can be usedin a variety of situations to monitor continuously and non-invasively small permittivity changes for the wear of lube oils, alcohol etc.
 
 \begin{figure}[b]
  	\centering
  	\includegraphics[width=1.0\columnwidth]{EHfield.png}
- 	\caption{A simulation of the cavity done in HFFS}
+ 	\caption{A simulation of the cavity with HFFS}
  	\label{fig:sim}
  \end{figure}
-\section{EVALUTING THE SETUP/RESULTS}
+\section{RESULTS}
 % \begin{figure}[b]
 %	\centering
 %	\includegraphics[width=1.0\columnwidth]{pumpgluzoomERE.png}
@@ -49,7 +49,7 @@ To evaluate the setup, measurements were made of water-glucose solutions with di
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=1.0\columnwidth]{pumpgluzoomEIM.png}
-	\caption{Real and Imaginary part of c. permittivity, $\epsilon''$ and $\epsilon'$ respectively vs concentration. Shifts in $\epsilon'$ and $\epsilon''$ due to small temperature variations. The circles are the original data (No temperature compensation) and the stars are the temperature shifted points}
+	\caption{Real and Imaginary part of c. permittivity, $\epsilon'$ and $\epsilon''$ respectively vs concentration. Shifts in $\epsilon'$ and $\epsilon''$ due to small temperature variations. The circles are the original data (No temperature compensation) and the stars are the temperature shifted points}
 	\label{fig:eim}
 \end{figure}
 
@@ -65,9 +65,9 @@ To evaluate the setup, measurements were made of water-glucose solutions with di
 
 
 \section{CONCLUSIONS}
-In this paper we suggest and evaluate a method of measuring the permittivity in a narrow frequency range around a cavity's resonant frequency. The approach is generic and can be applied to almost any cavity as the procedure only involves redirecting some of the flow to go through the cavity.
+In this paper we implement and evaluate a method of measuring the permittivity continuously and noninvasively the complex permittivity of a fluid using a cavity resonator. We show that the method is accurate enough to result in a trend in the relatively narrow glucose-water concentration range, i.e the medical range.
 
-In the evaluation we show that the method is accurate enough to result in a trend in a relatively narrow glucose-water concentration range. For improvements, the uncertainty in the permittivity can be reduced by better reference values, more accurate calculations, better concentration and temperature control and a more rigid setup. Despite the many possible improvements we believe that the method as it is can successfully be used to detect anomalies and deviations in complex permittivity from a reference value.
+For improvements, the uncertainty in the permittivity can be reduced by using better reference values and improved concentration and temperature control.
 %\addtolength{\textheight}{-18cm}   % This command serves to balance the column lengths
 % on the last page of the document manually. It shortens
 % the textheight of the last page by a suitable amount.
